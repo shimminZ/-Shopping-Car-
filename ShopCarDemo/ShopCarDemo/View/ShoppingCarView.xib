@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShoppingCarView">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-h7-VrC" userLabel="topView">
+                    <rect key="frame" x="0.0" y="0.0" width="434" height="10"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="PzF-cK-jhm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZa-s2-S5a">
+                    <rect key="frame" x="0.0" y="10" width="434" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LII-XB-ay9">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="UD3-aV-25E"/>
+                            </constraints>
+                            <state key="normal" image="color_no_choose"/>
+                            <connections>
+                                <action selector="clickAllSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="Hz0-nF-TA3"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpK-Qq-HXl" userLabel="lineView">
+                            <rect key="frame" x="0.0" y="39" width="434" height="1"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="6nk-bk-cvb"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李志" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbo-rl-dQS">
+                            <rect key="frame" x="50" y="5" width="70" height="30"/>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.49803921569999998" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="HvK-po-NKa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Kbo-rl-dQS" firstAttribute="leading" secondItem="LII-XB-ay9" secondAttribute="trailing" id="4c0-VV-HSd"/>
+                        <constraint firstItem="LII-XB-ay9" firstAttribute="top" secondItem="gZa-s2-S5a" secondAttribute="top" id="9i1-Nv-F19"/>
+                        <constraint firstItem="gpK-Qq-HXl" firstAttribute="leading" secondItem="gZa-s2-S5a" secondAttribute="leading" id="EvY-OD-U0B"/>
+                        <constraint firstAttribute="bottom" secondItem="gpK-Qq-HXl" secondAttribute="bottom" id="Gz7-pv-cXU"/>
+                        <constraint firstAttribute="bottom" secondItem="LII-XB-ay9" secondAttribute="bottom" id="Kg9-dv-bMn"/>
+                        <constraint firstItem="Kbo-rl-dQS" firstAttribute="top" secondItem="gZa-s2-S5a" secondAttribute="top" constant="5" id="TKL-cm-Lrc"/>
+                        <constraint firstItem="Kbo-rl-dQS" firstAttribute="centerY" secondItem="gZa-s2-S5a" secondAttribute="centerY" id="VPO-7h-RdC"/>
+                        <constraint firstAttribute="bottom" secondItem="Kbo-rl-dQS" secondAttribute="bottom" constant="5" id="ZeV-fD-Pbb"/>
+                        <constraint firstItem="LII-XB-ay9" firstAttribute="leading" secondItem="gZa-s2-S5a" secondAttribute="leading" id="lQu-Ln-vc7"/>
+                        <constraint firstAttribute="trailing" secondItem="gpK-Qq-HXl" secondAttribute="trailing" id="pi6-du-P9q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gZa-s2-S5a" secondAttribute="bottom" id="JUx-oq-87S"/>
+                <constraint firstItem="gZa-s2-S5a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KeP-hP-LKQ"/>
+                <constraint firstItem="Kw4-h7-VrC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NFl-rA-FtO"/>
+                <constraint firstAttribute="trailing" secondItem="Kw4-h7-VrC" secondAttribute="trailing" id="U2g-GW-GMX"/>
+                <constraint firstItem="gZa-s2-S5a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z04-aP-0AG"/>
+                <constraint firstItem="Kw4-h7-VrC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dLj-X8-fxa"/>
+                <constraint firstAttribute="trailing" secondItem="gZa-s2-S5a" secondAttribute="trailing" id="ebh-XX-6qx"/>
+                <constraint firstItem="gZa-s2-S5a" firstAttribute="top" secondItem="Kw4-h7-VrC" secondAttribute="bottom" id="w2m-vx-RvE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Z04-aP-0AG"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="chooseBtn" destination="LII-XB-ay9" id="Xu4-OO-T9j"/>
+                <outlet property="nameLab" destination="Kbo-rl-dQS" id="Zmm-Ej-uAQ"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="color_no_choose" width="19" height="19"/>
+    </resources>
+</document>

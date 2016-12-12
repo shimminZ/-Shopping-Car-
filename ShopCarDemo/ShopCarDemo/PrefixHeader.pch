@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  ShopCarDemo
+//
+//  Created by zhang on 16/12/8.
+//  Copyright © 2016年 zhang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIViewController+ExtendCtr.h"
+#import "UIBarButtonItem+CustomBarBtnItem.h"
+#import "ToolLab.h"
+#import "ToolBtn.h"
+
+
+#define MainScreen_size_width  [UIScreen mainScreen].bounds.size.width
+#define MainScreen_size_height [UIScreen mainScreen].bounds.size.height
+
+
+
+//颜色的RGBA
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define RandomColor [UIColor colorWithRed:arc4random_uniform(255) / 256.0 green:arc4random_uniform(255) / 256.0 blue:arc4random_uniform(255) / 256.0 alpha:1]
+
+#define LightBlueColor RGBA(33, 180, 255, 1)
+
+
+#ifdef DEBUG
+#define MYLog(fmt , ...) NSLog((@"--DEBUG-- %s Line:%d " fmt), __PRETTY_FUNCTION__, __LINE__,##__VA_ARGS__)
+#else
+#define MYLog(fmt,...)
+#endif
+
+#endif /* PrefixHeader_pch */
